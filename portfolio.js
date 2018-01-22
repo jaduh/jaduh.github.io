@@ -1,20 +1,36 @@
-var meer = document.querySelector('#meerknop');
- meer.addEventListener('click',toggleTekst);
+
+//oplossing teveel tekst op pagina. 
+
+var meerknop = document.querySelector('#meerknop');
+var terugknop = document.querySelector('#terugknop')
+
 var p1 = document.querySelector('#p1');
 var p2 = document.querySelector('#p2');
 
+meerknop.addEventListener('click', meerTekst);
+terugknop.addEventListener('click', terugTekst);
 
-function toggleTekst(){
+
+function meerTekst(){
     
     if(p2.style.display='none'){
         p1.style.display='none';
         p2.style.display='block';
+        terugknop.style.display='block';
+        meerknop.style.display='none';
     }
    
 }
 
 
-
+function terugTekst(){
+    if(p1.style.display='none'){
+        p2.style.display='none';
+        p1.style.display='block';
+        meerknop.style.display='block';
+        terugknop.style.display='none';
+    }
+}
 
 
 

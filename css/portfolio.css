@@ -116,6 +116,24 @@ text-align: justify;
     display: none;
 }
 
+#about-section .meer-terug{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 2rem;
+    
+}
+
+#about-section .knop{
+    color:#ed7180;
+}
+
+#terugknop{
+    display: none;
+}
+
+
+
+/*
 #about-section #meerknop #meer{
    
     font-size: 0.8rem;
@@ -128,6 +146,7 @@ text-align: justify;
     margin-right: 1.5rem;
     
 }
+*/
 
 
 
