@@ -83,7 +83,7 @@ height: 100vh;
     height: 100vh;
     background-color: #fefbee;
  text-align: center;
-   
+   overflow:scroll;
     
 }
 
@@ -91,7 +91,7 @@ height: 100vh;
 #about-section h2{
         font-size: 1.2rem;
      color: #ed7180;
-    margin-top: 1rem;
+   margin-top: 1rem;
 
         
     }
@@ -108,8 +108,8 @@ height: 100vh;
 #about-section .about-textbox .paragraaf{
     
 text-align: justify;
-    padding:0.5rem 1rem;
-    margin: 1rem .5rem;
+    padding:0 1rem;
+    margin: 0.5rem .5rem;
 }
 
 #about-section .about-textbox #p2{
@@ -120,6 +120,7 @@ text-align: justify;
     display: flex;
     justify-content: flex-end;
     margin: 0 2rem;
+    cursor: pointer;
     
 }
 
@@ -131,22 +132,6 @@ text-align: justify;
     display: none;
 }
 
-
-
-/*
-#about-section #meerknop #meer{
-   
-    font-size: 0.8rem;
-    margin-top:-1rem
-        
-}
-
-#about-section #meerknop{
-    align-self: flex-end;
-    margin-right: 1.5rem;
-    
-}
-*/
 
 
 
@@ -168,7 +153,7 @@ text-align: justify;
 
 #projects-section{
     height: 100vh;
-    color:#fff;
+    color:#777;
     
     
 }
@@ -179,7 +164,7 @@ text-align: justify;
 
 #projects{
     margin: 3rem 0;
-    text-shadow: .09rem .09rem #777;
+/*    text-shadow: .09rem .09rem #777;*/
 }
 #projects-section .project{
     height: 28vh;
@@ -191,7 +176,9 @@ text-align: justify;
 }
 
 #project-1{
-    background-color: #ed7180;
+    background-image: url(../img/feelGood.png);
+    background-size: cover;
+    background-position: center
     
 }
 #project-2{
@@ -211,10 +198,12 @@ background-color:
         
     }
     
+/*
     #alle-tekst{
        margin-top: 20%;
         
     }
+*/
     
     .about-textbox{
         display: flex;
