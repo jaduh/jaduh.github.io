@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header {
+  background-color: #ef7f81;
+  height: 100vh; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: .5rem; }
+  nav a {
+    color: #fff;
+    font-family: 'Martel';
+    text-decoration: none;
+    padding: .5rem; }
+
+.header {
+  background-image: linear-gradient(rgba(237, 113, 128, 0.8), rgba(255, 200, 200, 0.9)), url(../img/jade_zwartwit.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+  .header .header-textbox {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center; }
+    .header .header-textbox h1 {
+      font-size: 2rem;
+      font-family: 'Bitter'; }
+    .header .header-textbox h3 {
+      color: #695569;
+      padding: 0.2rem; }
+
+.subkop {
+  display: block; }
+
+#about-section {
+  height: 100vh;
+  background-color: #fefbee;
+  text-align: center;
+  overflow: scroll; }
+  #about-section h2 {
+    font-size: 1.2rem;
+    color: #ed7180;
+    margin-top: 1rem; }
+  #about-section .about-textbox {
+    display: flex;
+    flex-direction: column; }
+    #about-section .about-textbox .paragraaf {
+      text-align: justify;
+      padding: 0 1rem;
+      margin: 0.5rem .5rem; }
+    #about-section .about-textbox #p2 {
+      display: none; }
+  #about-section .meer-terug {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 2rem;
+    cursor: pointer; }
+    #about-section .meer-terug .knop {
+      color: #ed7180; }
+    #about-section .meer-terug #terugknop {
+      display: none; }
+
+#about-section nav a {
+  color: #695569; }
+
+#about-section #email {
+  text-align: center;
+  padding: 1rem;
+  color: #ed7180;
+  font-size: .8rem; }
+
+#projects-section {
+  height: 100vh;
+  width: auto;
+  color: #777; }
+
+#projects-section nav a {
+  color: #695569; }
+
+#projects {
+  margin: 3rem; }
+
+#projects-section .project {
+  height: 28vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0; }
+
+#project-1 {
+  background-image: url(../img/feelGood.png);
+  background-size: cover;
+  background-position: top; }
+
+#project-2 {
+  background-image: url(../img/weerbericht.png);
+  background-size: cover;
+  background-position: top; }
+
+#project-3 {
+  background-image: url(../img/temperatuurCalculator.png);
+  background-size: cover;
+  background-position: top; }
+
+@media (min-width: 500px) {
+  #about-section h2 {
+    font-size: 1.5rem; }
+  /*
+    #alle-tekst{
+       margin-top: 20%;
+        
+    }
+*/
+  .about-textbox {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 3rem 0rem 3rem; }
+  .about-textbox p {
+    font-size: 1.2rem;
+    margin: 0rem 3rem; }
+  #about-section .about-textbox #p2 {
+    display: block; }
+  #about-section #meer {
+    display: none; } }
+
+@media (min-width: 700px) {
+  .header-textbox #kop {
+    font-size: 3rem; }
+  .header-textbox h3 {
+    font-size: 2rem; }
+  #about-section h2 {
+    font-size: 2rem; }
+  .about-textbox {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 3rem 0rem 3rem; }
+  .about-textbox p {
+    font-size: 1.5rem;
+    margin: 0rem 3rem; }
+  #about-section .about-textbox #p2 {
+    display: block; }
+  #about-section #meer {
+    display: none; }
+  #about-section #email,
+  #telefoon {
+    font-size: 1.5rem; } }

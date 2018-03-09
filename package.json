@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "portfolio.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/portfolio.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaduh/jaduh.github.io.git"
+  },
+  "author": "Jade Yorks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaduh/jaduh.github.io/issues"
+  },
+  "homepage": "https://github.com/jaduh/jaduh.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

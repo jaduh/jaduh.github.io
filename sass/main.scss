@@ -1,20 +1,249 @@
-$color-one: #ef7f81;
-$color-two:#badfda;
-$color-three:#fefaee;
-$color-text-one:#695569;
-$color-text-two:#fff;
-    
-*{
-    margin:0;
+$color-one:#ef7f81;
+ $color-two:#badfda;
+ $color-three:#fefaee;
+ $color-text-one:#695569;
+ $color-text-two:#fff;
+@mixin background-image {
+    background-size: cover;
+    background-position: top;
+}
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100vw;
 }
 
-.header{
- background-color: $color-one; 
+@keyframes vanLinks{
+    0%{opacity: 0;
+        transform: translateX(-100px)
+        
+    }
+    
+    100%{ opacity: 1;
+        transform: translate(0)
+    }
+}
+
+@keyframes vanOnder{
+    0%{opacity: 0;
+        transform: translateY(100px)
+        
+    }
+    
+    100%{ opacity: 1;
+        transform: translate(0)
+    }
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'bree serif';
+}
+nav {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    a {
+        color: $color-text-two;
+        font-family: 'Martel';
+        text-decoration: none;
+        padding: .5rem;
+        font-size: 1.5rem;
+    }
+}
+.header {
+    background-image: linear-gradient(rgba(237, 113, 128, .8), rgba(255, 200, 200, .9)), url(../img/jade_zwartwit.jpg);
+    background-size: cover;
+    background-position: center;
     height: 100vh;
-    
-    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    .header-textbox {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(259, 259, 259, .9);
+        text-align: center;
+        h1 {
+            font-size: 2rem;
+            font-family: 'Bitter';
+            @media screen and (min-width: 500px) {
+                font-size: 4rem;
+                animation-name: vanLinks;
+                animation-duration: 1.5s;
+                
+            }
+            .subkop {
+                display: block;
+            }
+        }
+        h3 {
+            color: $color-text-one;
+            padding: 0.2rem;
+            font-size: 2rem;
+            animation-name: vanOnder;
+                animation-duration: 1.5s;
+        }
+    }
 }
+/*about section*/
 
+#about-section {
+    height: 100vh;
+    background-color: $color-three;
+    text-align: center;
+    overflow: scroll;
+    nav {
+        a {
+            color: $color-text-one;
+        }
+    }
+    #alle-tekst {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        h2 {
+            font-size: 2rem;
+            color: $color-one;
+//           margin-top: 1rem;
+            padding: 1.5rem;
+            width: 70vw;
+            @media screen and (min-width: 600px) {
+                
+                 width:40vw;
+                
+            }
+            
+            @media screen and (min-width: 800px) {
+                
+                
+                font-size: 3rem;
+                 width:30vw;
+            }
+            
+        }
+        .about-textbox {
+            display: flex;
+            flex-direction: column;
+            width:80vw;
+            
+             @media screen and (min-width: 1000px) {
+                
+                 width:50vw;
+            }
+            .about-tekstvlak {
+                .paragraaf {
+                    text-align: justify;
+                    padding: 0 1rem;
+                    margin: 0.5rem .5rem;
+                    font-size: 1.5rem;
+                    
+                    @media screen and (min-width: 800px) {
+                
+                font-size: 2rem;
+            }
+                }
+            }
+            #p2 {
+                display: none;
+            }
+        }
+        .meer-terug {
+            display: flex;
+            justify-content: flex-end;
+            margin: .5 0 2rem;
+            cursor: pointer;
+            #terugknop {
+                display: none;
+            }
+            .knop {
+                color: $color-one;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .social-mediabox {
+        margin-top: 5rem;
+    }
+    #email {
+        text-align: center;
+        padding: 1rem;
+        color: $color-one;
+        font-size: 1.5rem;
+    }
+}
+#projects-section {
+    height: 100vh;
+    width: 100vw;
+    color: #777;
+    nav {
+        a {
+            color: #695569;
+        }
+    }
+    #projects {
+        margin: 3rem;
+        .project-container {
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width: 600px) {
+        
+                display: flex;
+                flex-direction: row;
+                // margin: 0 4rem;
+            }
+            @media screen and (min-width: 900px) {
+                
+                margin: 0 6rem;
+            }
+            .project {
+                height: 28vh;
+                text-align: center;
+                margin: 1rem 0;
+                width: auto;
+                @media screen and (min-width: 600px) {
+                   width: 40vw;
+                   
+                }
+
+            }
+            .project-uitleg {
+                
+            font-size: 1.3rem;
+            text-align: justify;
+                @media screen and (min-width: 600px) {
+                    width: 40vw;
+                    margin: 1.5rem;
+                    font-size: 1.4rem;
+                }
+                @media screen and (min-width: 800px) {
+                    width: 40vw;
+                    margin: 1.5rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+        #project-1 {
+            background-image: url(../img/feelGood.png);
+            @include background-image;
+        }
+        #project-2 {
+            background-image: url(../img/weerbericht.png);
+            @include background-image;
+        }
+        #project-3 {
+            background-image: url(../img/temperatuurCalculator.png);
+            @include background-image;
+        }
+    }
+}
 
