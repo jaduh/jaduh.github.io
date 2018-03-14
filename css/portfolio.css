@@ -45,6 +45,10 @@ nav {
   display: flex;
   flex-direction: column;
   align-content: center; }
+  @media screen and (min-width: 800px) {
+    .header {
+      width: 50vw;
+      height: 97vh; } }
   .header .header-textbox {
     width: 90%;
     position: absolute;
@@ -53,14 +57,18 @@ nav {
     transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, 0.9);
     text-align: center; }
+    @media screen and (min-width: 800px) {
+      .header .header-textbox {
+        left: 25%;
+        width: 45%; } }
     .header .header-textbox h1 {
       font-size: 2rem;
-      font-family: 'Bitter'; }
+      font-family: 'Bitter';
+      animation-name: vanLinks;
+      animation-duration: 1.5s; }
       @media screen and (min-width: 500px) {
         .header .header-textbox h1 {
-          font-size: 4rem;
-          animation-name: vanLinks;
-          animation-duration: 1.5s; } }
+          font-size: 3rem; } }
       .header .header-textbox h1 .subkop {
         display: block; }
     .header .header-textbox h3 {
@@ -70,10 +78,29 @@ nav {
       animation-name: vanOnder;
       animation-duration: 1.5s; }
 
+/*resumee section*/
+.resumee {
+  height: 100vh;
+  background-color: #FCFCFC; }
+  .resumee .jobs {
+    padding: 1rem;
+    margin: 4rem 2rem;
+    text-align: justify; }
+    .resumee .jobs .category {
+      color: #ef7f81; }
+  @media screen and (min-width: 800px) {
+    .resumee {
+      width: 50vw; } }
+
+@media screen and (min-width: 800px) {
+  .big-screen-container {
+    display: flex;
+    margin: 1rem; } }
+
 /*about section*/
 #about-section {
   height: 100vh;
-  background-color: #fefaee;
+  background-color: #FCFCFC;
   text-align: center;
   overflow: scroll; }
   #about-section nav a {
@@ -86,7 +113,7 @@ nav {
     height: 100vh; }
     #about-section #alle-tekst h2 {
       font-size: 2rem;
-      color: #ef7f81;
+      color: #695569;
       padding: 1.5rem;
       width: 70vw; }
       @media screen and (min-width: 600px) {
@@ -94,7 +121,6 @@ nav {
           width: 40vw; } }
       @media screen and (min-width: 800px) {
         #about-section #alle-tekst h2 {
-          font-size: 3rem;
           width: 30vw; } }
     #about-section #alle-tekst .about-textbox {
       display: flex;
