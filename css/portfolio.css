@@ -100,17 +100,25 @@ nav {
 /*about section*/
 #about-section {
   height: 100vh;
-  background-color: #FCFCFC;
   text-align: center;
   overflow: scroll; }
+  #about-section .groen-vlak {
+    height: 100vh;
+    margin: 1rem;
+    clip-path: polygon(39% 0, 100% 0, 100% 100%, 67% 100%);
+    background-color: rgba(169, 238, 230, 0.7);
+    position: absolute;
+    width: 100vw; }
   #about-section nav a {
     color: #695569; }
   #about-section #alle-tekst {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; }
+    height: 100vh;
+    position: relative; }
     #about-section #alle-tekst h2 {
       font-size: 2rem;
       color: #695569;
@@ -133,10 +141,10 @@ nav {
         text-align: justify;
         padding: 0 1rem;
         margin: 0.5rem .5rem;
-        font-size: 1.5rem; }
+        font-size: 1rem; }
         @media screen and (min-width: 800px) {
           #about-section #alle-tekst .about-textbox .about-tekstvlak .paragraaf {
-            font-size: 2rem; } }
+            font-size: 1.5rem; } }
       #about-section #alle-tekst .about-textbox #p2 {
         display: none; }
     #about-section #alle-tekst .meer-terug {
