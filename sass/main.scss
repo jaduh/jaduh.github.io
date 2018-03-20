@@ -15,6 +15,14 @@ $color-text-two:#fff;
     box-sizing: border-box;
     max-width: 100vw;
 }
+a{
+    text-decoration: none;
+    color: $color-text-two;
+    &:hover{
+        text-decoration: none;
+        color: $color-text-one;
+    }
+}
 
 @keyframes vanLinks{
     0%{opacity: 0;
@@ -109,9 +117,33 @@ nav {
 .resumee{
     height: 100vh;
     background-color: $color-three;
+    font-size: 1.15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    a{
+        color: $color-text-one;
+    }
     .jobs{
         padding: 1rem;
-        margin:4rem 2rem;
+        margin:0 2rem;
+        overflow: scroll;
+
+        @media screen and (min-width: 500px){
+          
+            font-size: 1.5rem;
+        }
+       
+        @media screen and (min-width: 1000px){
+           
+            font-size: 1.6rem;
+        }
+
+        @media screen and (min-width: 1200px){
+           
+            font-size: 1.8rem;
+        }
         text-align: justify;
         .category{
             color: $color-one;
@@ -144,7 +176,7 @@ nav {
         clip-path: polygon(39% 0, 100% 0, 100% 100%, 67% 100%);
         background-color: $color-one-trans;
         position: absolute;
-        width: 100vw;
+        width: 97vw;
         
         
     }
@@ -198,7 +230,7 @@ nav {
                     text-align: justify;
                     padding: 0 1rem;
                     margin: 0.5rem .5rem;
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     
                     @media screen and (min-width: 800px) {
                 
@@ -239,66 +271,95 @@ nav {
 #projects-section {
     height: 100vh;
     width: 100vw;
-    color: #777;
-    nav {
-        a {
-            color: #695569;
-        }
+    color: $color-text-two;
+    position: relative;
+    h2{
+        font-size: 2.5rem;
+        color: $color-text-one;
+       margin: 0 0 5rem 4rem;
     }
-    #projects {
-        margin: 3rem;
-        .project-container {
-            display: flex;
-            flex-direction: column;
-            @media screen and (min-width: 600px) {
-        
-                display: flex;
-                flex-direction: row;
-                // margin: 0 4rem;
-            }
-            @media screen and (min-width: 900px) {
-                
-                margin: 0 6rem;
-            }
-            .project {
-                height: 28vh;
-                text-align: center;
-                margin: 1rem 0;
-                width: auto;
-                @media screen and (min-width: 600px) {
-                   width: 40vw;
-                   
-                }
+    .project-container{
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+         align-items:center;
+      height:100vh;
 
+      @media screen and(min-width:650px){
+        position: relative;
+        top: 15rem;
+ }
+      
+
+   
+
+        .project{
+            height: 15rem;
+            width: 15rem;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            background-color: #ef7f81;
+            margin: 1rem;
+            @media screen and(min-width:650px){
+                height: 22rem;
+                width: 22rem;
             }
-            .project-uitleg {
-                
-            font-size: 1.3rem;
-            text-align: justify;
-                @media screen and (min-width: 600px) {
-                    width: 40vw;
-                    margin: 1.5rem;
-                    font-size: 1.4rem;
-                }
-                @media screen and (min-width: 800px) {
-                    width: 40vw;
-                    margin: 1.5rem;
-                    font-size: 1.6rem;
-                }
+            .project-titel{
+                text-align: center;
+                position: relative;
+                top:5rem;
+                font-size: 1.5rem;
             }
+            &:hover{
+                background: $color-one-trans; 
+                color: $color-text-one;
+             }
         }
-        #project-1 {
-            background-image: url(../img/feelGood.png);
-            @include background-image;
+        #project-2{
+            position: relative;
+            right: 8rem;
+            bottom: 4rem;
+           
+            @media screen and(min-width:650px){
+            right: 11.5rem;
+            bottom: 5rem;
+            }
+
+           
         }
-        #project-2 {
-            background-image: url(../img/weerbericht.png);
-            @include background-image;
-        }
-        #project-3 {
-            background-image: url(../img/temperatuurCalculator.png);
-            @include background-image;
-        }
+           
+            
+          
+          
+          #project-3{
+            position: relative;
+          
+            bottom: 8rem;
+            @media screen and(min-width:650px){
+                bottom: 10.5rem;
+            
+                }
+           
+            
+          }
+
+          #project-uitleg{
+            color: $color-text-one;
+            background-color: $color-one-trans;
+            position: relative;
+            bottom: 38rem;
+            left: 8.5rem;
+            display:none;
+    
+             @media screen and(min-width:650px){
+                    bottom: 53rem;
+                    left: 12rem;
+             }
+    
+    
+          }
     }
+        
 }
+    
+
 

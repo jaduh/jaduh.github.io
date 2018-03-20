@@ -1,0 +1,316 @@
+
+
+* {
+
+
+    padding: 0;
+
+
+    margin: 0;
+
+
+    box-sizing: border-box;
+
+
+    font-family: 'Roboto Slab', serif;
+
+
+}
+
+
+html {
+
+
+    font: 62.5%;
+
+
+}
+
+
+section {
+
+
+    background-color: yellow;
+
+
+    background-image: url("https://images.unsplash.com/photo-1502623547075-299b5ba76c53?auto=format&fit=crop&w=1050&q=80");
+
+
+    background-size: cover;
+
+
+    background-position: center;
+
+
+    width: 100vw;
+
+
+    height: 100vh;
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+}
+
+
+.kop {
+
+
+    display: flex;
+
+
+    justify-content: center;
+
+
+    ;
+
+
+}
+
+
+.kop h1 {
+
+
+    align-items: center;
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    margin: 1rem;
+
+
+    font-family: 'Roboto Slab', serif;
+
+
+}
+
+
+.kop h1 #weerbericht {
+
+
+    font-size: 3rem;
+
+
+    color: #fff;
+
+
+}
+
+
+#weerbericht2 {
+
+
+    color: #e94a60;
+
+
+}
+
+
+#p-container {
+
+
+    display: flex;
+
+
+    justify-content: center;
+
+
+    font-size: 1rem;
+
+
+    text-align: center;
+
+
+}
+
+
+#toestemming-tekst {
+
+
+    background-color: rgba(250, 231, 123, 0.7);
+
+
+    padding: 0.5rem;
+
+
+    border-radius: 1rem;
+
+
+}
+
+
+#container {
+
+
+    margin-top: 3rem;
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    align-items: center;
+
+
+    justify-content: center;
+
+
+    background-color: rgba(192, 192, 192, .4);
+
+
+    max-width: 80%;
+
+
+    height: 20rem;
+
+
+    align-self: center;
+
+
+    padding: 2rem;
+
+
+}
+
+
+#container #naamStad {
+
+
+    color: white;
+
+
+    font-size: 1.7rem;
+
+
+    text-shadow: 0.05rem 0.05rem grey;
+
+
+    text-align: center;
+
+
+}
+
+
+#container #temperatuur {
+
+
+    font-size: 1.5rem;
+
+
+    margin: 0.5rem;
+
+
+}
+
+
+#container #weer {
+
+
+    font-size: 2rem;
+
+
+}
+
+
+#container #weerSymbool {
+
+
+    max-width: 2rem;
+
+
+    height: auto;
+
+
+}
+
+
+#temp-knop {
+
+
+    display: flex;
+
+
+    justify-content: flex-end;
+
+
+}
+
+
+.knoppen {
+
+
+    background-color: #E94A60;
+
+
+    padding: 0.7rem;
+
+
+    margin: 1rem 1rem 0 0;
+
+
+    font-size: 1.2rem;
+
+
+    border: 0rem;
+    
+    cursor:pointer; 
+    
+    
+
+
+}
+
+
+.knoppen:hover {
+
+
+    background-color: #Fff;
+
+
+}
+
+
+#andere-locaties {
+
+
+    display: flex;
+
+
+    justify-content: center;
+
+
+}
+
+
+form {
+
+
+    margin: 2rem;
+
+
+    max-width: 40%;
+
+
+    text-align: center;
+
+
+}
+
+
+input {
+
+
+    background-color: #e94a60;
+
+
+}

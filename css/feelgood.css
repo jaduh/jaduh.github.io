@@ -1,0 +1,145 @@
+@font-face{
+
+font-family:lobster;
+ src:url(font/Lobster-Regular.ttf);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font: 62.5%;
+}
+body {
+    max-width: 100vw;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.7;
+    padding: 2rem;
+}
+header {
+    height: 100vh;
+}
+
+
+header .vlak {
+    background-color: #f7baa0;
+    background-image: linear-gradient(to right bottom, rgba(196, 193, 224, 1), rgba(237, 237, 237, 0.5)), url("");
+    background-size: cover;
+    background-position: top;
+    height: 85%;
+
+}
+
+
+header .vlak .kop {
+    font-family: lobster;
+    font-size: 0.8rem;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header .scroll {
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: center;
+    color: #33425B;
+}
+
+
+
+.random{
+  min-height: 100vh;
+ background-image:  linear-gradient(to right bottom, rgba(247, 186, 160, 1), rgba(237, 237, 237, 0.5)),
+   url(https://images.unsplash.com/photo-1514207147125-8e6c07bbe5ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bbdce3ba9f72095ab0bae8e386bead9e&auto=format&fit=crop&w=1502&q=80);
+  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+#citaat-container{
+  display:flex;
+  justify-content:center;
+
+  
+} 
+
+ #citaat-container h2{
+  padding: 1rem;
+     margin: 12rem 4rem 4rem 4rem;
+   font-family: 'Lobster';
+   color: white;
+     text-shadow: .05rem .05rem #000;
+   text-align: center;
+   font-size: 2rem;
+   
+    line-height: 95%;
+     
+     @media screen  and (min-width: 600px){
+            font-size:4rem;
+            margin-top: 3rem;
+     }
+}
+
+
+button{
+  
+  width: 9rem;
+  border: 0.08rem solid #fff;
+  border-radius: 0.6rem;
+  padding: 0.6rem;
+  font-family:lobster;
+  font-size:2rem;
+  color: #fff;
+    text-shadow: .05rem .05rem #000;
+    margin-top: 3rem;
+    background-color: transparent;
+ 
+
+  
+}
+
+
+
+
+.random-quote{
+  background-image: background-image:  linear-gradient(to right bottom, rgba(247, 186, 160, 1), rgba(237, 237, 237, 0.5))
+}
+
+/*
+@media screen  and (max-width: 600px){
+    
+    #citaat-container h2{ font-size: 1rem;
+    margin 1rem;}
+        button{
+            font-size:0.5rem;
+            margin-top: 8rem;
+        }
+}
+*/
+/*
+    
+@media screen  and (max-width: 900px){
+     #citaat-container h2{ font-size: 2rem;}
+        button{
+            font-size:1rem;
+            margin-top: 3rem;
+        }
+    
+}
+
+@media screen  and (max-width: 1200px){
+    
+    #citaat-container h2{ font-size: 3rem;}
+        button{
+            font-size:2rem;
+            margin-top: 3rem;
+        }
+}*/

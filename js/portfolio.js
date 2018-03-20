@@ -1,5 +1,4 @@
 
-//oplossing teveel tekst op pagina. 
 
 var meerknop = document.querySelector('#meerknop');
 var terugknop = document.querySelector('#terugknop')
@@ -31,6 +30,11 @@ function terugTekst(){
         terugknop.style.display='none';
     }
 }
+
+//project uitleg
+// per project const uitleg die bij onclick innerhtml .
+//klikke op prjectvlak maakt achtergrond kleur blauw en doet uitleg project verschijnen
+
 
 
 
