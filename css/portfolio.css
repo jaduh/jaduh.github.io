@@ -168,7 +168,7 @@ nav {
         font-size: 1.2rem; }
         @media screen and (min-width: 800px) {
           #about-section #alle-tekst .about-textbox .about-tekstvlak .paragraaf {
-            font-size: 1.5rem; } }
+            font-size: 1.8rem; } }
       #about-section #alle-tekst .about-textbox #p2 {
         display: none; }
     #about-section #alle-tekst .meer-terug {
@@ -257,10 +257,19 @@ nav {
       left: 8rem;
       max-width: 15rem;
       display: none;
-      padding: 5rem 2rem; }
+      padding: 2.5rem 1rem; }
+      #projects-section .project-container #project-uitleg a {
+        color: #fff; }
+        #projects-section .project-container #project-uitleg a:hover {
+          color: #ef7f81; }
       #projects-section .project-container #project-uitleg #uitleg-tekst {
-        padding: .5rem;
+        padding: .2rem;
+        font-size: 1rem;
         overflow-wrap: break-word; }
+        @media screen and (min-width: 650px) {
+          #projects-section .project-container #project-uitleg #uitleg-tekst {
+            font-size: 1.4rem;
+            padding: 2rem 1rem; } }
       @media screen and (min-width: 650px) {
         #projects-section .project-container #project-uitleg {
           bottom: 53rem;

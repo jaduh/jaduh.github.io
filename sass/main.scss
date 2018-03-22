@@ -236,7 +236,7 @@ nav {
                     
                     @media screen and (min-width: 800px) {
                 
-                font-size: 1.5rem;
+                font-size: 1.8rem;
             }
                 }
             }
@@ -312,6 +312,7 @@ nav {
             align-items: center;
             justify-content: center;
             cursor: pointer;
+           
             @media screen and(min-width:650px){
                 min-height: 22rem;
                 min-width: 22rem;
@@ -362,11 +363,24 @@ nav {
             left: 8rem;
             max-width: 15rem;
             display:none;
-            padding: 5rem 2rem;
-            
+            padding: 2.5rem 1rem;
            
+
+                a{            
+                color: $color-text-two;
+                    &:hover{
+                        color: $color-one;
+                        }
+                }
             #uitleg-tekst{
-                padding: .5rem;
+                padding: .2rem;
+                
+                font-size: 1rem;
+                @media screen and(min-width:650px){
+                    font-size: 1.4rem;
+                    padding: 2rem 1rem;
+                    }
+                
                 
                 overflow-wrap: break-word;
             }

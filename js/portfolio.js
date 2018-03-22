@@ -52,9 +52,12 @@ function terugTekst(){
 
 //1 
 
-var feelGood = "De app waarmee ik voor het eerst geleerde javascript theorie omzette in de praktijk.";
-   var weather = "weater dummy tekst weater dummy tekst weater dummy tekst weater dummy tekst ";
-   var temperatuur = "temperatuur dummetekst temperatuur dummetekst temperatuur dummetekst ";
+var feelGood = ["Met deze app zette ik voor het eerst mijn geleerde javascript theorie om in de praktijk. Doelgroep: zomermensen die deprie worden van de winter.", 
+"<a  href='feelgood.html' target = '_blank'></br> Ga naar de app</a>" ];
+   var weather = ["De app waar ik qua functionaliteit het meest trots op ben. Dagen zwoegen, maar nu weet ik hoe ik data kan verkrijgen via API's.",
+   "<a target = '_blank' href='weather.html'></br> Ga naar de app</a>"];
+   var temperatuur = ["Een simpele app die ik maakt om te oefenen met het manipuleren van de DOM",
+"<a  href='temp.html' target = '_blank'> </br> Ga naar de app</a>"];
 
 var project1 = document.getElementById("project-1");
    var project2 = document.getElementById("project-2");
@@ -69,13 +72,7 @@ project3.addEventListener('click',project3Uitleg);
 
 function projectUitleg(tekst){
 
-
-   
         uitleg.style.display = "block";
-   
-    
-
-
 
 }
 
