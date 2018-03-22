@@ -19,7 +19,8 @@ a{
     text-decoration: none;
     color: $color-text-two;
     &:hover{
-        text-decoration: none;
+       
+        
         color: $color-text-one;
     }
 }
@@ -173,6 +174,7 @@ nav {
     .groen-vlak{
         height: 100vh;
         margin: 1rem;
+        -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 67% 100%);
         clip-path: polygon(39% 0, 100% 0, 100% 100%, 67% 100%);
         background-color: $color-one-trans;
         position: absolute;
@@ -260,6 +262,7 @@ nav {
     }
     .social-mediabox {
         margin-top: 5rem;
+        
     }
     #email {
         text-align: center;
@@ -272,16 +275,20 @@ nav {
     height: 100vh;
     width: 100vw;
     color: $color-text-two;
+    display: flex;
+    flex-direction: column;
     position: relative;
     h2{
         font-size: 2.5rem;
         color: $color-text-one;
-       margin: 0 0 5rem 4rem;
+        position: relative;
+        top: 3rem;
+        margin: 1rem 0 5rem 3rem;
+       align-self: flex-start;
     }
     .project-container{
         display: flex;
         flex-direction: column;
-         justify-content: center;
          align-items:center;
       height:100vh;
 
@@ -294,25 +301,29 @@ nav {
    
 
         .project{
-            height: 15rem;
-            width: 15rem;
+            min-height: 15rem;
+            min-width: 15rem;
+            -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
             background-color: #ef7f81;
             margin: 1rem;
+            padding:.5rem;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
             @media screen and(min-width:650px){
-                height: 22rem;
-                width: 22rem;
+                min-height: 22rem;
+                min-width: 22rem;
             }
             .project-titel{
                 text-align: center;
-                position: relative;
-                top:5rem;
-                font-size: 1.5rem;
+                font-size: 1rem;
+                @media screen and(min-width:650px){
+                    font-size: 1.5rem;
+                }
             }
-            &:hover{
-                background: $color-one-trans; 
-                color: $color-text-one;
-             }
+           
         }
         #project-2{
             position: relative;
@@ -342,13 +353,24 @@ nav {
             
           }
 
+          
           #project-uitleg{
             color: $color-text-one;
             background-color: $color-one-trans;
             position: relative;
             bottom: 38rem;
-            left: 8.5rem;
+            left: 8rem;
+            max-width: 15rem;
             display:none;
+            padding: 5rem 2rem;
+            
+           
+            #uitleg-tekst{
+                padding: .5rem;
+                
+                overflow-wrap: break-word;
+            }
+        
     
              @media screen and(min-width:650px){
                     bottom: 53rem;
@@ -361,5 +383,8 @@ nav {
         
 }
     
-
+.veranderAchtergrond{
+    background-color: $color-one-trans;
+    color: $color-text-one;
+}
 

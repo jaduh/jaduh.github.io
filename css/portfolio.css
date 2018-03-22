@@ -8,7 +8,6 @@ a {
   text-decoration: none;
   color: #fff; }
   a:hover {
-    text-decoration: none;
     color: #695569; }
 
 @keyframes vanLinks {
@@ -129,6 +128,7 @@ nav {
   #about-section .groen-vlak {
     height: 100vh;
     margin: 1rem;
+    -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 67% 100%);
     clip-path: polygon(39% 0, 100% 0, 100% 100%, 67% 100%);
     background-color: rgba(169, 238, 230, 0.7);
     position: absolute;
@@ -194,15 +194,19 @@ nav {
   height: 100vh;
   width: 100vw;
   color: #fff;
+  display: flex;
+  flex-direction: column;
   position: relative; }
   #projects-section h2 {
     font-size: 2.5rem;
     color: #695569;
-    margin: 0 0 5rem 4rem; }
+    position: relative;
+    top: 3rem;
+    margin: 1rem 0 5rem 3rem;
+    align-self: flex-start; }
   #projects-section .project-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 100vh; }
     @media screen and (min-width: 650px) {
@@ -210,23 +214,27 @@ nav {
         position: relative;
         top: 15rem; } }
     #projects-section .project-container .project {
-      height: 15rem;
-      width: 15rem;
+      min-height: 15rem;
+      min-width: 15rem;
+      -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
       background-color: #ef7f81;
-      margin: 1rem; }
+      margin: 1rem;
+      padding: .5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; }
       @media screen and (min-width: 650px) {
         #projects-section .project-container .project {
-          height: 22rem;
-          width: 22rem; } }
+          min-height: 22rem;
+          min-width: 22rem; } }
       #projects-section .project-container .project .project-titel {
         text-align: center;
-        position: relative;
-        top: 5rem;
-        font-size: 1.5rem; }
-      #projects-section .project-container .project:hover {
-        background: rgba(169, 238, 230, 0.7);
-        color: #695569; }
+        font-size: 1rem; }
+        @media screen and (min-width: 650px) {
+          #projects-section .project-container .project .project-titel {
+            font-size: 1.5rem; } }
     #projects-section .project-container #project-2 {
       position: relative;
       right: 8rem;
@@ -246,9 +254,18 @@ nav {
       background-color: rgba(169, 238, 230, 0.7);
       position: relative;
       bottom: 38rem;
-      left: 8.5rem;
-      display: none; }
+      left: 8rem;
+      max-width: 15rem;
+      display: none;
+      padding: 5rem 2rem; }
+      #projects-section .project-container #project-uitleg #uitleg-tekst {
+        padding: .5rem;
+        overflow-wrap: break-word; }
       @media screen and (min-width: 650px) {
         #projects-section .project-container #project-uitleg {
           bottom: 53rem;
           left: 12rem; } }
+
+.veranderAchtergrond {
+  background-color: rgba(169, 238, 230, 0.7);
+  color: #695569; }

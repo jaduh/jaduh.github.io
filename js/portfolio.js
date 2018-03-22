@@ -1,5 +1,15 @@
 
 
+// function displayStuff(el,){
+//     if(el.style.display='none'){
+//     el.style.display='block';
+//     } else{
+//         el.style.display='none';
+//         }
+// }
+
+
+// meer en terugknop voor verschillende teksten op aboutsection
 var meerknop = document.querySelector('#meerknop');
 var terugknop = document.querySelector('#terugknop')
 
@@ -31,55 +41,58 @@ function terugTekst(){
     }
 }
 
-//project uitleg
-// per project const uitleg die bij onclick innerhtml .
-//klikke op prjectvlak maakt achtergrond kleur blauw en doet uitleg project verschijnen
 
 
 
+//klik op #project-1, #project-2 of #project-3 
+//verandert achtergrondkleur
+// project-uitleg verschijnt + passende project uitleg
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////--------------------Smooth scrolling
 //
-//
-//function anchorLinkHandler(e) {
-//    var distanceToTop = function (el){
-//      return Math.floor(el.getBoundingClientRect().top);
-//
-//    };
-//    e.preventDefault();
-//    const targetID = this.getAttribute("href");
-//    const targetAnchor = document.querySelector(targetID);
-//    if (!targetAnchor) return;
-//    const originalTop = distanceToTop(targetAnchor);
-//
-//    window.scrollBy({ top: originalTop, left: 0, behavior: "smooth" });
-//
-//    const checkIfDone = setInterval(function() {
-//        const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-//        if (distanceToTop(targetAnchor) === 0 || atBottom) {
-//            targetAnchor.tabIndex = "-1";
-//            targetAnchor.focus();
-//            window.history.pushState("", "", targetID);
-//            clearInterval(checkIfDone);
-//        }
-//    }, 100);
-//}
-//
-//const linksToAnchors = document.querySelectorAll('a[href^="#"]');
-//
-//linksToAnchors.forEach(each => (each.onclick = anchorLinkHandler));
+
+//1 
+
+var feelGood = "De app waarmee ik voor het eerst geleerde javascript theorie omzette in de praktijk.";
+   var weather = "weater dummy tekst weater dummy tekst weater dummy tekst weater dummy tekst ";
+   var temperatuur = "temperatuur dummetekst temperatuur dummetekst temperatuur dummetekst ";
+
+var project1 = document.getElementById("project-1");
+   var project2 = document.getElementById("project-2");
+   var project3 = document.getElementById("project-3");
+   var uitleg = document.getElementById("project-uitleg");
+   var uitlegTekst = document.getElementById("uitleg-tekst");
+
+  var projecten= document.querySelector(".project");
+project1.addEventListener('click',project1Uitleg);
+project2.addEventListener('click',project2Uitleg);
+project3.addEventListener('click',project3Uitleg);
+
+function projectUitleg(tekst){
+
+
+   
+        uitleg.style.display = "block";
+   
+    
+
+
+
+}
+
+function project1Uitleg(){
+    projectUitleg();
+uitlegTekst.innerHTML=feelGood;
+
+}
+
+function project2Uitleg(){
+    projectUitleg();
+uitlegTekst.innerHTML=weather;
+
+}
+function project3Uitleg(){
+    projectUitleg();
+uitlegTekst.innerHTML=temperatuur;
+
+}
+
