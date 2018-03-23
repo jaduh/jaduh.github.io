@@ -1,5 +1,5 @@
 
-require('es6-promise/auto');
+require('es6-promise').polyfill();
 
 var weerTypes = [
     'Clear Sky',
