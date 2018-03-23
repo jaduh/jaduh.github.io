@@ -46,7 +46,7 @@ var currentPosition = (function() {
 
 
 
-            var apiRequest = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=8d8ae780c690c3afc002ee7aef0ffece';
+            var apiRequest = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=8d8ae780c690c3afc002ee7aef0ffece';
 
 
 
