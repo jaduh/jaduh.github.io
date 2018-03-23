@@ -1,3 +1,5 @@
+import "babel-polyfill";
+
 var weerTypes = [
     'Clear Sky',
     'Clear',
