@@ -1,6 +1,6 @@
 
 
-import "babel-polyfill";
+
 
 // meer en terugknop voor verschillende teksten op aboutsection
 var meerknop = document.querySelector('#meerknop');
