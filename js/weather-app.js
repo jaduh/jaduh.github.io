@@ -1,4 +1,5 @@
-import "babel-polyfill";
+
+require('es6-promise/auto');
 
 var weerTypes = [
     'Clear Sky',
