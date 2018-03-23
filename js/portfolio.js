@@ -1,13 +1,6 @@
 
 
-// function displayStuff(el,){
-//     if(el.style.display='none'){
-//     el.style.display='block';
-//     } else{
-//         el.style.display='none';
-//         }
-// }
-
+import "babel-polyfill";
 
 // meer en terugknop voor verschillende teksten op aboutsection
 var meerknop = document.querySelector('#meerknop');
@@ -18,7 +11,6 @@ var p2 = document.querySelector('#p2');
 
 meerknop.addEventListener('click', meerTekst);
 terugknop.addEventListener('click', terugTekst);
-
 
 function meerTekst(){
     

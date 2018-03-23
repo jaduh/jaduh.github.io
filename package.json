@@ -16,8 +16,11 @@
     "url": "https://github.com/jaduh/jaduh.github.io/issues"
   },
   "homepage": "https://github.com/jaduh/jaduh.github.io#readme",
-  "dependencies": {},
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "node-sass": "^4.7.2"
   }
 }
