@@ -37,7 +37,7 @@ var fahrenheit = document.querySelector("#fahrenheit");
 
 var currentPosition = (function() {
 
-    if (document.readyState === "interactive" || "complete") {
+    // if (document.readyState === "interactive" || "complete") {
 
         navigator.geolocation.getCurrentPosition(function(position) {
 
@@ -82,5 +82,6 @@ var currentPosition = (function() {
         })
     } 
 
-})();
+// }
+)();
 
