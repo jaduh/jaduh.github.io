@@ -24,7 +24,8 @@ const BlogIndex = ({ data }, location) => {
       {data.site.siteMetadata.description && (
         <header className="page-head">
           <h2 className="page-head-title">
-            {data.site.siteMetadata.description}
+            {/* {data.site.siteMetadata.description} */}
+            Femma Magazine met nog meer DIY én nog meer verhalen waar je zo van houdt.
           </h2>
         </header>
       )}
