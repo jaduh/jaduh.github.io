@@ -40,7 +40,7 @@ justify-content: center;
 
 
 .mid{
-  background:  url("../images/jadexyz.jpg");
+  background:  url("/jadexyz.jpg");
   display: flex;
   justify-content: center;
   align-items:center;
