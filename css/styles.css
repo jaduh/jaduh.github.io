@@ -1,0 +1,99 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+
+
+body{
+  background: #fce8e3;
+}
+
+
+
+
+
+
+
+
+
+.container  {
+  display: flex;
+  max-width: 100vw;
+  min-height: 100vh;
+
+justify-content: center;
+  align-items: center;
+}
+
+
+
+}
+.een{
+
+  margin-top: 20rem;
+}
+
+
+.mid{
+  background:  url("../images/jadexyz.jpg");
+  display: flex;
+  justify-content: center;
+  align-items:center;
+height: 40vh;
+
+
+
+  margin: 2rem;
+
+  background-position: 75% 25%; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+}
+
+
+.ruimte{
+  margin: 0 2rem;
+}
+@media screen and (max-width:600px) {
+
+
+}
+
+.twee{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  max-width: 90vw;
+
+}
+
+.container main {
+
+  font-family: 'Playfair Display', serif;
+
+
+}
+
+.enter{
+  display: block;
+}
+
+
+.center{ display: flex;
+  flex-direction: column;
+  justify-content: center;
+width: 100%;
+
+}
+
+ul{
+  padding: 2rem;
+}
